@@ -10,9 +10,18 @@
             particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
             particlesContainer.appendChild(particle);
         }
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
 
+// Load saved theme
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
         // Typing effect
-        const text = "Welcome to my ethical hacker portfolio. Let's secure the digital world...";
+        const text = "Welcome to my tech portfolio.  Exploring cybersecurity and full-stack development through real-world projects....";
         let index = 0;
         const typedTextElement = document.getElementById("typed-text");
 
