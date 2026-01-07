@@ -453,6 +453,112 @@ h2 {
 }
 
 /* BACK SIDE - E-CELL STYLE */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card wrapper */
+.project-card {
+    perspective: 1000px;
+}
+
+/* Inner flip container */
+.project-inner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.project-card:hover .project-inner {
+    transform: rotateY(180deg);
+}
+
+/* Shared face styles */
+.project-front,
+.project-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 6px 24px var(--shadow-light);
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+}
+
+/* FRONT SIDE - E-CELL STYLE */
+.project-front {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-front::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-gold), var(--accent-blue));
+    z-index: 1;
+}
+
+/* Image takes controlled space */
+.project-front img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: var(--bg-secondary);
+}
+
+/* Title and tech area */
+.project-front-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-front h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+.project-front p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-tag {
+    padding: 5px 12px;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid var(--accent-gold);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* BACK SIDE - E-CELL STYLE */
 .project-back {
     transform: rotateY(180deg);
     padding: 30px;
@@ -841,3 +947,4 @@ footer {
     }
 
 }
+
