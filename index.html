@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Gaurav Pawar - Security Analyst & Ethical Hacker</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
 </head>
 <body>
     <!-- Animated particles background -->
@@ -90,30 +92,101 @@
         </div>
     </section>
 
-    <section id="projects">
-        <h2 class="blur-reveal"><i class="fas fa-code"></i> Projects</h2>
-        <a href="https://wa.me/919403553117?text=Hi" style="text-decoration: none;">
-            <div class="card blur-reveal">
-                <h3>Akola Police WhatsApp Chatbot</h3>
-                <p><strong>Technologies:</strong> JavaScript, Meta WhatsApp API, MongoDB Atlas</p>
-                <p>Developed a rule-based WhatsApp chatbot for Akola Police, integrating APIs for secure service access. Focused on user-friendly design and 24/7 availability.</p>
-            </div>
-        </a>
-        <a href="https://drive.google.com/drive/folders/1eXmS-hw14CPQpIDO2EmIBkfNWVkspTRp?usp=sharing" style="text-decoration: none;">
-            <div class="card blur-reveal">
-                <h3>Server-ED: Frontend & Security</h3>
-                <p>Reduced education costs by 90% and distractions by 40%. Implemented interactive features for better learning.</p>
-            </div>
-        </a>
-        <a href="https://drive.google.com/drive/folders/18YusJy9bwdFphK1lv7POFlL6wDLY5dU5?usp=sharing" style="text-decoration: none;">
-            <div class="card blur-reveal">
-                <h3>Screen Pass – Web-Based Movie Ticket Booking</h3>
-                <p><strong>Technologies:</strong> JavaScript, Node.js, HTML, CSS, MySQL</p>
-                <p>Built a responsive system for real-time bookings with backend logic and database integration.</p>
-            </div>
-        </a>
-    </section>
+    <!-- PROJECTS (E-CELL STYLE FLIP CARDS) -->
+<section id="projects">
+    <h2 class="blur-reveal">
+        <i class="fas fa-code"></i> Projects
+    </h2>
 
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card blur-reveal">
+            <div class="project-inner">
+                <!-- FRONT -->
+                <div class="project-front">
+                    <img src="chatbotpro.jpeg" alt="Akola Police WhatsApp Chatbot">
+                    <div class="project-front-content">
+                        <div>
+                            <h3>Akola Police Chatbot</h3>
+                            <p><strong>Technologies:</strong></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">WhatsApp API</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="project-back">
+                    <p>Developed a rule-based WhatsApp chatbot for Akola Police, integrating APIs for secure service access. Focused on user-friendly design and 24/7 availability.</p>
+                    <div class="project-actions">
+                        <a href="https://wa.me/919403553117?text=Hi" target="_blank">View Live</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card blur-reveal">
+            <div class="project-inner">
+                <!-- FRONT -->
+                <div class="project-front">
+                    <img src="project2.png" alt="Server-ED">
+                    <div class="project-front-content">
+                        <div>
+                            <h3>Server-ED</h3>
+                            <p><strong>Technologies:</strong></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Frontend</span>
+                                <span class="tech-tag">Security</span>
+                                <span class="tech-tag">UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="project-back">
+                    <p>Reduced education costs by 90% and distractions by 40%. Implemented interactive features for improved learning experience.</p>
+                    <div class="project-actions">
+                        <a href="https://drive.google.com/drive/folders/1eXmS-hw14CPQpIDO2EmIBkfNWVkspTRp?usp=sharing" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card blur-reveal">
+            <div class="project-inner">
+                <!-- FRONT -->
+                <div class="project-front">
+                    <img src="screenpass.png" alt="Screen Pass">
+                    <div class="project-front-content">
+                        <div>
+                            <h3>Screen Pass</h3>
+                            <p><strong>Technologies:</strong></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="project-back">
+                    <p>Built a responsive movie ticket booking system with real-time seat selection, backend booking logic, and MySQL database integration.</p>
+                    <div class="project-actions">
+                        <a href="https://drive.google.com/drive/folders/18YusJy9bwdFphK1lv7POFlL6wDLY5dU5?usp=sharing" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <section id="experience">
         <h2 class="blur-reveal"><i class="fas fa-briefcase"></i> Experience</h2>
         <div class="card blur-reveal">
@@ -196,4 +269,5 @@
 
     <script src="script2.js"></script>
 </body>
+
 </html>
