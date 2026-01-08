@@ -743,7 +743,50 @@ h2 {
 .contact-item p {
     color: var(--text-secondary);
     font-size: 0.95rem;
-    font-color : black;
+    color: footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+}
+
+footer h4 {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+footer h4::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: orange;
+}
+
+.socials a {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease;
+    color: #000;
+}
+
+.socials a:hover {
+    transform: translateY(-5px) scale(1.2);
+    color: #231a19;
+}
+
+.socials a.social-bounce {
+    animation: bounce 1s ease backwards;
+}
+
 }
 
 /* ==========================================
@@ -948,5 +991,6 @@ footer {
     }
 
 }
+
 
 
