@@ -743,6 +743,7 @@ h2 {
 .contact-item p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+    font-color : black;
 }
 
 /* ==========================================
@@ -947,4 +948,5 @@ footer {
     }
 
 }
+
 
