@@ -888,10 +888,12 @@ footer {
     border-radius: 10px;
     overflow: hidden;
     transition: all 1s ease;
+   display: none;
 }
 
 .flex:hover .certi-wrapper{
     transform: scale(1.05);
+   display: block;
 }
 
 .flex{
@@ -923,4 +925,5 @@ footer {
 .flex:hover .certi-wrapper{
     display: block;
    }   
+
 }
