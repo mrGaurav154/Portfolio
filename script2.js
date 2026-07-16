@@ -21,7 +21,7 @@
 const savedTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
         // Typing effect
-        const text = "Welcome to my tech portfolio.  Exploring cybersecurity and full-stack development through real-world projects....";
+        const text = "Welcome to my tech portfolio.  Exploring Data Analyst, cybersecurity and full-stack development through real-world projects....";
         let index = 0;
         const typedTextElement = document.getElementById("typed-text");
 
